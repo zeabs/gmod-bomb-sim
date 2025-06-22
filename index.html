@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Bomb Simulator</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bomb Sim</h1>
+    <div class="header-buttons">
+      <button id="dark-mode-toggle" title="Toggle dark mode">🌙</button>
+      <button id="settings-toggle" class="mobile-only">Settings</button>
+    </div>
+  </header>
+  
+  <main>
+    <div id="settings-panel" class="settings-panel">
+      <div class="settings-header">
+        <h2>Pattern Settings</h2>
+        <button id="settings-close" class="mobile-only">×</button>
+      </div>
+      <div id="pattern-grid">
+        <!-- Will be populated by JavaScript -->
+      </div>
+      
+      <div class="cut-order-panel">
+        <div id="cut-order-display">
+          <button id="show-cut-order">Click to show cut order</button>
+          <div id="cut-order-text" style="display: none;"></div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="bomb-container">
+      <svg id="bomb-svg"></svg>
+    </div>
+    
+    <div class="stats-panel">
+      <h2>Statistics</h2>
+      <div class="stat-item">
+        <span>Successful defusals:</span>
+        <span id="successful-defusals">0</span>
+      </div>
+      <div class="stat-item">
+        <span>Failed defusals:</span>
+        <span id="failed-defusals">0</span>
+      </div>
+      <div class="stat-item">
+        <span>Average defuse time:</span>
+        <span id="avg-defuse-time">0s</span>
+      </div>
+      
+      <h3>Recent Defusals</h3>
+      <div id="recent-defusals" class="recent-defusals">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

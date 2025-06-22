@@ -1,0 +1,19 @@
+{
+  "name": "gmod-bomb-sim",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild index.ts --bundle --outfile=index.js --platform=browser --target=es2020"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.5"
+  },
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.2.4"
+  }
+}
